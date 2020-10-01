@@ -1,0 +1,30 @@
+{
+  "name": "twitter-kafka-node-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@market-predictor/market-predictor-commons": "^1.0.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "kafka-node": "^5.0.0",
+    "mongoose": "^5.10.7",
+    "morgan": "^1.10.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.1",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
